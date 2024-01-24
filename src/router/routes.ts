@@ -23,6 +23,14 @@ const routes: RouteRecordRaw[] = [
       { path: 'TheFooterTop', component: () => import('components/TheFooterTop.vue') },
       { path: 'TheFooterBottom', component: () => import('components/TheFooterBottom.vue') },
       { path: 'TheFooter', component: () => import('components/TheFooter.vue') },
+      { path: 'MainPage', component: () => import('pages/MainPage.vue') },
+      { path: 'UyelikPage', component: () => import('pages/UyelikPage.vue') },
+      { path: 'GirisYapPage', component: () => import('pages/GirisYapPage.vue') },
+      { path: 'SepetPage', component: () => import('pages/SepetPage.vue') },
+      { path: 'BlogPage', component: () => import('pages/BlogPage.vue') },
+      { path: 'DetayliAramaPage', component: () => import('pages/DetayliArama.vue') },
+
+
     ],
   },
   {
@@ -34,12 +42,11 @@ const routes: RouteRecordRaw[] = [
     ],
   },
 
-  // Always leave this as last one,
-  // but you can also remove it
   {
     path: '/:catchAll(.*)*',
     component: () => import('pages/ErrorNotFound.vue'),
   },
+
 ];
 
 export default routes;
